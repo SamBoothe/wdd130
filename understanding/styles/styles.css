@@ -1,18 +1,16 @@
-body {
+/*nav{
     text-align: center;
-}
-
-nav{
     background-color: steelblue;
     padding: 10px;
 }
-
+*/
 a{
     color: white;
     margin: 40px;
 }
 
 h1{
+    text-align: center;
     color: steelblue;
 }
 
@@ -25,15 +23,40 @@ p{
     padding: 10px;
 }
 
-footer{
+nav, footer{
     background-color: steelblue;
     color: white;
+    text-align: center;
 }
+
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
 #active {
+    background-color: white;
+    color: steelblue;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+    margin: 20pv auto;
+}
+
+a:hover {
     background-color: white;
     color: steelblue;
 }
