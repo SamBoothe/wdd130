@@ -1,0 +1,12 @@
+header{
+    margin: 0 auto;
+    max-width: 100%;
+    }
+
+#main-img{
+    max-width: 300px;
+}
+
+body{
+    background-color: #646464;
+}

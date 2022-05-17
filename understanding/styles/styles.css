@@ -7,16 +7,13 @@
 a{
     color: white;
     margin: 40px;
+    padding: 25px;
 }
 
 h1{
     text-align: center;
     color: steelblue;
-}
-
-img{
-    width: 880px;
-    border: 4px solid steelblue;
+    margin: 50px 0;
 }
 
 p{
@@ -27,6 +24,10 @@ nav, footer{
     background-color: steelblue;
     color: white;
     text-align: center;
+}
+
+nav{
+    padding: 25px;
 }
 
 .main-para {
@@ -43,20 +44,26 @@ img {
     display: block;
     width: 90%;
     margin: 0 auto;
+    border: 4px solid steelblue;
 }
 
 main p{
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
 }
 
 footer p{
     font-size: 20px;
     margin: 20pv auto;
+    padding: 25px;
 }
 
 a:hover {
     background-color: white;
     color: steelblue;
+}
+
+body{
+    margin: 0;
 }
