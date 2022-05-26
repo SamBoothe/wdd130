@@ -1,0 +1,8 @@
+.content{
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+}
+.red1{
+    background-color: red;
+    width: 100%;
+}
