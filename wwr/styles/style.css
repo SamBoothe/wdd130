@@ -249,7 +249,8 @@ footer .social img {
 }
 
 #banner-msg {
-    color:#E1EFF6;
+    color:#1f1f1f;
+    font-family: 'Special Elite', Helvetica, sans-serif;
     text-align: center;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -261,7 +262,7 @@ footer .social img {
 }
 
 .info-grid {
-    font-size: .8em;
+    font-size: 20px;
     color: #E1EFF6;
 }
 
@@ -284,6 +285,7 @@ footer .social img {
     width: 20em;
     float: left;
     margin: 20px 50px 10px 50px;
+    box-shadow: 5px 5px 10px #1f1f1f;
 }
 
 .info-text1{
@@ -309,6 +311,7 @@ footer .social img {
     width: 20em;
     float: right;
     margin: 20px 50px 10px 50px;
+    box-shadow: 5px 5px 10px #1f1f1f;
 }
 
 .info-text2-1{
