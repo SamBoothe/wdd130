@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch&family=Kdam+Thmor+Pro&family=Source+Code+Pro&family=Syncopate&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #778076;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #443412;
+    font-family: Syncopate, "Source Code Pro", Calibri;
+    justify-content: center;
+}
+
+
+
+nav a{
+    color: #c1c1c1;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-decoration: none;
+    font-size: 115%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#build-and-play{
+    grid-column: 2/4;
+    margin: 40px;
+}
+
+#plan-and-contact{
+    grid-column: 5/7;
+    margin: 40px;
+}
+
+.button-box{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #778076;
+}
+
+.button-box:hover{
+    background-color: #778076;
+}
+
+#logo_link{
+    grid-column: 4/5;
+    padding: 25px;
+    align-self: center;
+    justify-self: center;
+    background-color: #443412;
+}
+
+.logo{
+    width: 150px;
+}
+
+.home-grid{
+    display: inline-block;
+    background-color: #778076;
+    color: white;
+    font-family: "Chakra Petch";
+    text-align: center;
+}
+
+h2{
+    font-family: Syncopate, "Source Code Pro", Calibri;
+    text-align: center;
+}
+
+.card-img{
+    width: 33%;
+    margin: 50px;
+    box-shadow: 5px 5px 10px #443412;
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    background-color: #443412;
+    font-family: Syncopate, "Source Code Pro", Calibri;
+    justify-content: space-around;
+    background-color: #443412;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    align-items: center;
+}
+
+h3{
+    font-size: 75%;
+}
+
+div a{
+    color: #c1c1c1;
+    text-align: center;
+}
+
+div a:hover{
+    background-color:#778076;
+    color:white;
+}
+
+footer .social img{
+    width: 30px;
+}
