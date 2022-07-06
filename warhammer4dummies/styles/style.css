@@ -73,12 +73,14 @@ nav a{
 h2{
     font-family: Syncopate, "Source Code Pro", Calibri;
     text-align: center;
+    color: #c1c1c1;
 }
 
 .card-img{
     width: 33%;
     margin: 50px;
     box-shadow: 5px 5px 10px #443412;
+    transition: transform .5s;
 }
 
 .card-img:hover{
@@ -121,3 +123,88 @@ div a:hover{
 footer .social img{
     width: 30px;
 }
+
+/* How to Play page */
+
+.play-grid{
+    display: block;
+}
+
+h1{
+    font-family: Syncopate, "Source Code Pro", Calibri;
+    text-align: center;
+    color: #c1c1c1;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #c1c1c1;
+    background-color: #778076;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+    font-family: "Chakra Petch", "Bebas Neue", Calibri;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 18%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #c1c1c1;
+    color: #778076;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #c1c1c1;
+    color: #778076;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #443412;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    color: white;
+    font-family: "Chakra Petch", "Bebas Neue", Calibri;
+    font-size: 18px;
+}
+
+.play-card{
+    width: 33%;
+    margin: 50px;
+    box-shadow: 5px 5px 10px #443412;
+    transition: transform .5s;
+}
+
+.play-card:hover{
+    transform: scale(1.1);
+}
+
+.open-war-card{
+    align-content: left;
+}
+
+.tournament-card{
+    align-content: right;
+}
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

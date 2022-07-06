@@ -12,50 +12,99 @@
 <body>
     <div id="content">
         <header>
-            <nav>
-                <div class="page1-button">
-                    <a class="build" href="build_and_paint.html">How to Build and Paint</a>
+            <nav id="build-and-play">
+                <div class="button-box">
+                    <a class="home" href="index.html">Home</a>                    
                 </div>
-                <div class="page2-button">
-                    <a class="play" href="play.html">How to Play</a>
+                <div class="button-box">
+                    <a class="build" href="build_and_paint.html">Build and Paint</a>
                 </div>
-                <div id="logo_link" href="index.html">
-                    <img class="logo" src='images/Logo.png' alt="Warhammer 4 Dummies Logo">
-                </div>
-                <div class="site-plan-button">
+            </nav>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src='images/Logo.png' alt="Warhammer 4 Dummies Logo">
+            </a>
+            <nav id="plan-and-contact">
+                <div class="button-box">
                     <a class="plan" href="site-plan.html">Site Plan</a>
                 </div>
-                <div class="contact-button">
+                <div class="button-box">
                     <a class="contact" href="contactus.html">Contact Us</a>
                 </div>
-                </nav>
+            </nav>
         </header>
-        
+
         <main class="play-grid">
+
             <h1>Three Ways To Play</h1>
-            
-            <section class="old_edition_msg">
-                <h2>Open War Play</h2>
-                <img class="open_war" src="images/Open_War_Cards.jpg" alt="Open War Cards">
-                <p> This mode involves the use of special cards that offer a twist in the original gameplay. Three cards are drawn initially, one from the Deployment deck, one from the Objectives deck, and one from the Twists deck. There are two other decks that can be used if specific circumstances are met, those are the Ruse and the Sudden Death decks. These last two are only used if your opponent has a larger army than your own. This mode is a very fun way to play different missions than what is in the core rule book or any of the other supplements that have been published.
-        </p>
-            </section>
-            <section class="narrative">
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Open_War')">Open War</button>
+                <button class="tablinks" onclick="openCity(event, 'Narrative')">Narrative Play</button>
+                <button class="tablinks" onclick="openCity(event, 'Tournament')">Matched Play</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Open_War" class="tabcontent">
+                <h2>Open War</h2>
+                <section class="open-war-card">
+                    <img class="play-card" src="images/Open_War_Cards.jpg" alt="Open War Cards">
+                </section>
+                <p> This mode involves the use of special cards that offer a twist in the original gameplay. Three cards
+                    are drawn initially, one from the Deployment deck, one from the Objectives deck, and one from the
+                    Twists deck. There are two other decks that can be used if specific circumstances are met, those are
+                    the Ruse and the Sudden Death decks. These last two are only used if your opponent has a larger army
+                    than your own. This mode is a very fun way to play different missions than what is in the core rule
+                    book or any of the other supplements that have been published.
+                </p>
+            </div>
+
+            <div id="Narrative" class="tabcontent">
                 <h2>Narrative Play</h2>
-                <p> This is an organized campaign that allows players to build their army as the army grows within the campaign. This is a fun way to get to know players of every level, from the most experienced to the newest of players.
+                <p> This is an organized campaign that allows players to build their army as the army grows within the
+                    campaign. This is a fun way to get to know players of every level, from the most experienced to the
+                    newest of players.
                 </p>
-            </section>
-            
-            <section class="new_edition_msg">
+            </div>
+
+            <div id="Tournament" class="tabcontent">
                 <h2>Matched Play</h2>
-                <img class="tournament" src="images/Warhammer_tournament.jpg" alt="Picture of a Tournament Setting">
-                <p> This mode encompasses tournaments and any other organized method of play. This mode is for more serious players, those that want a more structured game play with specific missions and rules. This can be fun, especially if the opponent is good natured.
+                <p> This mode encompasses tournaments and any other organized method of play. This mode is for more
+                    serious players, those that want a more structured game play with specific missions and rules. This
+                    can be fun, especially if the opponent is good natured.
                 </p>
-            </section>
+                <section class="tournament-card">
+                <img class="play-card" src="images/Warhammer_tournament.jpg" alt="Picture of a Tournament Setting">
+                </section>
+            </div>
+            <script>
+                function openCity(evt, cityName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+                }
+            </script>
         </main>
         <footer>
             <h3>Warhammer 4 Dummies &copy; 2022 - Sam Boothe</h3>
-            <h3><a href="site-plan.html">Site Plan</a></h3>
+            <h3><a href="contactus.html">Contact Us</a></h3>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
@@ -69,6 +118,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Tabs</title>
+    <link rel="stylesheet" href="styles/tabs_style.css">
+
+</head>
+
+<body>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Open_War')">Open War</button>        
+        <button class="tablinks" onclick="openCity(event, 'Narrative')">Narrative Play</button>
+        <button class="tablinks" onclick="openCity(event, 'Tournament')">Matched Play</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Open_War" class="tabcontent">
+        <h3>Open War</h3>
+        <img class="play-card" src="images/Open_War_Cards.jpg" alt="Open War Cards">
+        <p> This mode involves the use of special cards that offer a twist in the original gameplay. Three cards
+            are drawn initially, one from the Deployment deck, one from the Objectives deck, and one from the
+            Twists deck. There are two other decks that can be used if specific circumstances are met, those are
+            the Ruse and the Sudden Death decks. These last two are only used if your opponent has a larger army
+            than your own. This mode is a very fun way to play different missions than what is in the core rule
+            book or any of the other supplements that have been published.
+        </p>
+    </div>
+
+    <div id="Narrative" class="tabcontent">
+        <h3>Narrative Play</h3>
+        <p> This is an organized campaign that allows players to build their army as the army grows within the
+            campaign. This is a fun way to get to know players of every level, from the most experienced to the
+            newest of players.
+        </p>
+    </div>
+
+    <div id="Tournament" class="tabcontent">
+        <h3>Matched Play</h3>
+        <p> This mode encompasses tournaments and any other organized method of play. This mode is for more
+            serious players, those that want a more structured game play with specific missions and rules. This
+            can be fun, especially if the opponent is good natured.
+        </p>
+        <img class="play-card" src="images/Warhammer_tournament.jpg" alt="Picture of a Tournament Setting">
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        }
+    </script>
+</body>
+
+</html>
