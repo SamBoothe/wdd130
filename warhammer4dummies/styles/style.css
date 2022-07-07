@@ -87,6 +87,11 @@ h2 {
     transform: scale(1.1);
 }
 
+.old-edition-card{
+    width: 50%;
+    margin-left: 25%;
+}
+
 p {
     margin-left: 50px;
     margin-right: 50px;
