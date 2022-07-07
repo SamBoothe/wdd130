@@ -14,8 +14,6 @@ header {
     justify-content: center;
 }
 
-
-
 nav a {
     color: #c1c1c1;
     text-align: center;
@@ -29,6 +27,16 @@ nav a {
 }
 
 #build-and-play {
+    grid-column: 2/4;
+    margin: 40px;
+}
+
+#home-and-play {
+    grid-column: 2/4;
+    margin: 40px;
+}
+
+#home-and-build {
     grid-column: 2/4;
     margin: 40px;
 }
@@ -129,6 +137,30 @@ footer .social img {
     width: 30px;
 }
 
+/* How to Build and Paint page */
+
+.build-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.completed-cadians{
+    width: 133%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.paints{
+    width: 133%;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+main p{
+    color: white;
+    font-family: "Chakra Petch";
+}
+
 /* How to Play page */
 
 .play-grid {
@@ -188,17 +220,6 @@ h1 {
     color: white;
     font-family: "Chakra Petch", "Bebas Neue", Calibri;
     font-size: 18px;
-}
-
-.play-card {
-    width: 33%;
-    margin: 50px;
-    box-shadow: 5px 5px 10px #443412;
-    transition: transform .5s;
-}
-
-.play-card:hover {
-    transform: scale(1.1);
 }
 
 .open-war-card {
