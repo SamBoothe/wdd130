@@ -222,12 +222,41 @@ h1 {
     font-size: 18px;
 }
 
+#Open_War{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#Open_War h2{
+    grid-column: 1/7;
+}
+
+#Open_War p{
+    grid-column: 4/7;
+}
+
 .open-war-card {
-    align-content: left;
+    width: 133%;
+    grid-column: 1/4;
+    padding-left: 18%;
+}
+
+#Tournament{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#Tournament p{
+    grid-column: 1/4;
+}
+
+#Tournament h2{
+    grid-column: 1/7;
 }
 
 .tournament-card {
-    align-content: right;
+    width: 133%;
+    padding-left: 18%;
+    grid-row: 2/3;
+    grid-column: 4/7;
 }
 
 /* Go from zero to full opacity */
